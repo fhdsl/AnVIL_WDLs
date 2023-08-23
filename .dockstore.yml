@@ -1,0 +1,10 @@
+version: 1.2
+workflows:
+  - subclass: WDL
+    primaryDescriptorPath: util_fastqgz_subsample.wdl
+    readMePath: README.md
+    authors:
+      - orcid: 0000-0002-1833-4397
+        name: Ava Hoffman
+        email: avamariehoffman@gmail.com
+    name: fastqgz_subsetter
