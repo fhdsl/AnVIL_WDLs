@@ -16,12 +16,13 @@ workflow fastqgz_subsample {
 task sample_file {
   input {
     File fastqgz_file
+    Int n = 10000
   }
   command <<<
     echo "input file: ~{fastqgz_file}"
     
     seqtk
-    seqtk sample -s11 ~{fastqgz_file} 1000 > 1_sub.fq
+    seqtk sample -s11 ~{fastqgz_file} ~{n} > 1_sub.fq
   >>>
   output {
     File read1_subset="1_sub.fq"
