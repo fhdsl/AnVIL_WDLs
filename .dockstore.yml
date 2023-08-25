@@ -1,10 +1,8 @@
 version: 1.2
 workflows:
   - subclass: WDL
-    primaryDescriptorPath: util_fastqgz_subsample.wdl
-    readMePath: README.md
+    primaryDescriptorPath: /fastq_subsample/fastq_subsample.wdl
+    readMePath: /fastq_subsample/README.md
     authors:
       - orcid: 0000-0002-1833-4397
-        name: Ava Hoffman
-        email: avamariehoffman@gmail.com
-    name: fastqgz_subsetter
+    name: fastq_subsample
